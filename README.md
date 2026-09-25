@@ -484,8 +484,6 @@ runtime requirement).
 
 ## Roadmap / possible extensions
 
-* ~~Head-pose estimation (nodding) via `cv2.solvePnP` on 3D face landmarks~~ —
-  *implemented* (display-only supporting signal; see the Head pose section).
 * Per-driver head-pose calibration profile (mount angle + focal-length estimate).
 * LSTM/GRU sequence models over the EAR/MAR history instead of the Random Forest.
 * Multi-driver sessions (face registration → per-person thresholds).
