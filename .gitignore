@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+
+# Data & artifacts (keep the repo clean; regenerate locally)
+data/sessions/*.csv
+data/models/*.joblib
+assets/*.wav
+assets/*.task
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs & caches
+*.log
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/

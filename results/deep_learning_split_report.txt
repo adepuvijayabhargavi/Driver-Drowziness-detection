@@ -1,0 +1,23 @@
+DEEP-LEARNING TRAINING -- STOPPING REPORT
+=========================================
+
+STATUS: STOPPED_INSUFFICIENT_DATA
+
+The current real dataset cannot produce a reliable session-based split.
+
+Sequence minima applied (per class per fold):
+  TRAIN      >= 100
+  VALIDATION >= 25
+  TEST       >= 25
+
+Violations:
+  - VALIDATION fold: alert -> 3 sequence(s) (minimum required 25) from sessions ['20260914_224109_f0416e']
+  - TEST fold: alert -> 1 sequence(s) (minimum required 25) from sessions ['20260914_224030_ce0743']
+
+A model trained on this split would memorise the training sessions,
+show 1.0 validation accuracy on a handful of windows, and report
+ROC-AUC=1.0 on a test set too small to contain a meaningful result per
+class. Refusing to report numbers is the honest outcome (task #5/#14).
+
+Collect more real, per-class sessions, then re-run:
+  python scripts/train_deep_learning.py --force

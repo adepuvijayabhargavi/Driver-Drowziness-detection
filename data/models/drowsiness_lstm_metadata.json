@@ -1,0 +1,83 @@
+{
+  "type": "lstm",
+  "model_path": "C:\\Users\\ADEPU VIJAYABHARGAVI\\OneDrive\\Attachments\\Driver Drowziness Detection and Alert System\\data\\models\\drowsiness_lstm.keras",
+  "scaler_path": "C:\\Users\\ADEPU VIJAYABHARGAVI\\OneDrive\\Attachments\\Driver Drowziness Detection and Alert System\\data\\models\\drowsiness_lstm_scaler.joblib",
+  "feature_names": [
+    "ear_left",
+    "ear_right",
+    "ear_mean",
+    "mar",
+    "perclos",
+    "eye_closed_duration",
+    "yawn_duration",
+    "pitch",
+    "yaw",
+    "roll"
+  ],
+  "sequence_length": 18,
+  "architecture": "LSTM(64, return_sequences=True) -> Dropout(0.2) -> LSTM(32) -> Dropout(0.2) -> Dense(16, relu) -> Dropout(0.2) -> Dense(1, sigmoid)",
+  "optimizer": "Adam",
+  "loss": "binary_crossentropy",
+  "train_session_ids": [
+    "20260914_224128_3cad4e",
+    "20260914_224221_3f8124",
+    "20260914_224436_7bfbe7",
+    "20260914_224757_e0e888"
+  ],
+  "validation_session_ids": [
+    "20260914_224109_f0416e",
+    "20260914_225051_cd27c3"
+  ],
+  "test_session_ids": [
+    "20260914_224030_ce0743",
+    "20260914_225007_ed6634"
+  ],
+  "train_class_counts": {
+    "alert": 286,
+    "drowsy": 566
+  },
+  "validation_class_counts": {
+    "alert": 3,
+    "drowsy": 80
+  },
+  "test_class_counts": {
+    "alert": 1,
+    "drowsy": 35
+  },
+  "class_weights": {
+    "0": 1.4895104895104896,
+    "1": 0.7526501766784452
+  },
+  "label_map": {
+    "alert": 0,
+    "drowsy": 1
+  },
+  "label_mode": "final",
+  "trained_at": "2026-09-14 23:50:51",
+  "random_state": 42,
+  "epochs_run": 30,
+  "test_metrics": {
+    "accuracy": 0.8333333333333334,
+    "roc_auc": 1.0,
+    "alert": {
+      "precision": 0.14285714285714285,
+      "recall": 1.0,
+      "f1": 0.25,
+      "support": 1
+    },
+    "drowsy": {
+      "precision": 1.0,
+      "recall": 0.8285714285714286,
+      "f1": 0.90625,
+      "support": 35
+    },
+    "macro_precision": 0.5714285714285714,
+    "macro_recall": 0.9142857142857144,
+    "macro_f1": 0.578125,
+    "weighted_precision": 0.9761904761904763,
+    "weighted_recall": 0.8333333333333335,
+    "weighted_f1": 0.8880208333333334
+  },
+  "epochs": 30,
+  "batch_size": 32
+}

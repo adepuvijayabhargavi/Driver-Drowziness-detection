@@ -1,0 +1,4 @@
+model,accuracy,alert_precision,alert_recall,alert_f1,drowsy_precision,drowsy_recall,drowsy_f1,macro_precision,macro_recall,macro_f1,weighted_f1
+logistic_regression,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.5000,0.5000,0.5000,1.0000
+random_forest,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.5000,0.5000,0.5000,1.0000
+svm,1.0000,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.5000,0.5000,0.5000,1.0000

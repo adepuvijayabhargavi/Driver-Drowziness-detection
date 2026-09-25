@@ -1,0 +1,5 @@
+# Optional: machine-learning classifier extension + training
+scikit-learn>=1.3.0
+joblib>=1.3.0
+# Plots (confusion matrices + Random Forest feature importance) exported by ml/train.py
+matplotlib>=3.6.0
